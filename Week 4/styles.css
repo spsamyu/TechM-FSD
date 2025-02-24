@@ -1,0 +1,724 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  background-color: #f0f2f5;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header */
+header {
+  background: url('https://img.freepik.com/free-vector/abstract-technological-background_23-2148897676.jpg') no-repeat center center/cover; /* Add your background image here */
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Make the header fixed */
+  top: 0; /* Position it at the top of the page */
+  left: 0; /* Stretch it across the full width */
+  right: 0; /* Stretch it across the full width */
+  z-index: 1000; /* Ensure it stays above other content */
+  overflow: hidden; /* Optional: Use only if needed */
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for better readability */
+  z-index: 1;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  z-index: 2; /* Ensure logo is above the overlay */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 2; /* Ensure navigation is above the overlay */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffdd57;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 2; /* Ensure social icons and dark mode toggle are above the overlay */
+}
+
+.social-icons a {
+  color: #fff;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffdd57;
+}
+
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+  color: #ffdd57;
+}
+/* Hero Section with Background Image */
+.hero {
+  background: url('https://wallpaperaccess.com/full/297686.jpg') no-repeat center center/cover;
+  color: #fff;
+  padding: 5rem 1rem;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.hero-content {
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  animation: fadeIn 2s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+#countdown-timer {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1.5rem 0;
+  color: #fff;
+}
+
+#countdown-timer span {
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin: 0 0.5rem;
+}
+
+/* Button with Highlight and Shadow on Hover */
+.cta-button {
+  background: #ffdd57;
+  color: #333;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+  background: #ffcc29;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(255, 221, 87, 0.5);
+}
+/* About Section */
+.about {
+  padding: 4rem 1rem;
+  text-align: center;
+  background-color: #dcdbed;
+  color: #0c0b0b;
+  max-width: 800px; /* Limit the width of the about section */
+  margin: 0 auto; /* Center the about section */
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about p {
+  text-align: justify; /* Justify text for better readability */
+  line-height: 1.8; /* Increase line height for better spacing */
+  padding: 0 1rem; /* Add padding to prevent text from touching the edges */
+}
+
+/* Sections */
+section {
+  padding: 6rem 1rem;
+  text-align: center;
+  background-color: #deddec;
+  color: #dfd1d1;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #0e2c5f;
+}
+
+/* Schedule Section */
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Reduce the min width of schedule items */
+  gap: 1.5rem;
+  max-width: 800px; /* Limit the width of the schedule grid */
+  margin: 0 auto; /* Center the schedule grid */
+}
+
+.schedule-item {
+  background: #fff;
+  background: url('https://img.freepik.com/free-vector/abstract-technological-background_23-2148897676.jpg') no-repeat center center/cover;
+  padding: 1.5rem; /* Reduce padding to make the boxes smaller */
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.schedule-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.176); /* Semi-transparent overlay */
+  z-index: 1;
+}
+
+.schedule-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(122, 120, 120, 0.2);
+  background-color: rgba(25, 11, 99, 0.433); /* Highlight background on hover */
+}
+
+.schedule-item:hover::before {
+  background: rgba(255, 255, 255, 0); /* Remove overlay on hover */
+}
+
+.schedule-item h3 {
+  font-size: 1.5rem;
+  color: #c3c8cf;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 2;
+  font-weight: bolder;
+}
+
+.schedule-item p {
+  font-size: 1rem;
+  color: #ecdede;
+  font-weight:bolder;
+  position: relative;
+  z-index: 2;
+}
+
+/* Publication Process Section */
+.publication-process {
+  padding: 4rem 1rem;
+  text-align: center;
+  background: #dae3ec;
+  max-width: 1000px; /* Limit the width of the section */
+  margin: 0 auto; /* Center the section */
+}
+
+.publication-process h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #2c4269;
+}
+
+.process-flow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Reduce the gap between process steps */
+}
+
+.process-step {
+  background: #fff;
+  background: url('https://img.freepik.com/free-vector/abstract-technological-background_23-2148897676.jpg') no-repeat center center/cover; /* Add your background image here */
+  padding: 1rem; /* Reduce padding to make the boxes smaller */
+  border-radius: 15px;
+  text-align: center;
+  width: 200px; /* Reduce the width of process steps */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.process-step::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(188, 188, 229, 0.46); /* Semi-transparent overlay */
+  z-index: 1;
+}
+
+.process-step:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: rgba(233, 233, 242, 0.8); /* Highlight background on hover */
+}
+
+.process-step:hover::before {
+  background: rgba(255, 255, 255, 0.101); /* Reduce overlay opacity on hover */
+}
+
+.process-step h3 {
+  font-size: 1.1rem; /* Reduce font size for smaller boxes */
+  color: #152a53;
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.process-step p {
+  font-size: 0.8rem; /* Reduce font size for smaller boxes */
+  color: #1b1a1a;
+  font-weight: bolder;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.process-step:hover h3,
+.process-step:hover p {
+  color: #fff; /* Change text color on hover */
+}
+
+.step-icon {
+  font-size: 1.5rem; /* Reduce icon size for smaller boxes */
+  color: #becade;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+.process-step:hover .step-icon {
+  color: #fff; /* Change icon color on hover */
+}
+
+/* Speakers Section */
+.speakers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.speaker {
+  background: #fff;
+  background: url('https://image.slidesdocs.com/responsive-images/background/light-blue-flash-plain-technology-business-powerpoint-background_807128c639__960_540.jpg') no-repeat center center/cover; /* Add your speaker background image here */
+ 
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.speaker::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://png.pngtree.com/background/20210714/original/pngtree-abstract-technology-background-technical-electric-picture-image_1252603.jpg') no-repeat center center/cover; /* Add your speaker background image here */
+  opacity: 0.3; /* Adjust opacity for better visibility */
+  z-index: -1;
+}
+
+.speaker:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.speaker:hover::before {
+  opacity: 0.5; /* Increase opacity on hover */
+}
+
+.speaker img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.speaker h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem;
+  color: #172e54;
+}
+
+.speaker p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #2c2b2b;
+}
+
+/* Footer */
+footer {
+  background: url('https://img.freepik.com/free-vector/abstract-technological-background_23-2148897676.jpg') no-repeat center center/cover;
+  color: #d6c5c5;
+  padding: 3rem 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(91, 90, 90, 0.356); /* Semi-transparent overlay to mild the background */
+  z-index: 1;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 2; /* Ensure content is above the overlay */
+}
+
+.footer-section h3 {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #ffdd57;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(154, 145, 145, 0.314);
+  padding-top: 1rem;
+  color: #fff;
+  position: relative;
+  z-index: 2; /* Ensure content is above the overlay */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode header {
+  background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+}
+
+.dark-mode .hero {
+  background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+}
+
+.dark-mode section {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+.dark-mode .schedule-item,
+.dark-mode .speaker,
+.dark-mode .process-step {
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+}
+
+.dark-mode footer {
+  background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
+}
+
+.dark-mode .cta-button {
+  background-color: #ffdd57;
+  color: #333;
+}
+
+.dark-mode .cta-button:hover {
+  background-color: #ffcc29;
+}
+
+.dark-mode .social-icons a {
+  color: #e0e0e0;
+}
+
+.dark-mode .social-icons a:hover {
+  color: #ffdd57;
+}
+
+.dark-mode .dark-mode-toggle {
+  color: #e0e0e0;
+}
+/* Schedule Section */
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Schedule Section */
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.schedule-item {
+  background: #fff;
+  background: url('https://img.freepik.com/free-vector/abstract-technological-background_23-2148897676.jpg') no-repeat center center/cover; /* Add your schedule background image here */
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.schedule-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.176); /* Increased opacity for better visibility */
+  z-index: 1;
+}
+
+.schedule-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: rgba(36, 23, 105, 0.8); /* Highlight background on hover */
+}
+
+.schedule-item:hover::before {
+  background: rgba(255, 255, 255, 0); /* Reduced overlay opacity on hover */
+}
+
+.schedule-item h3 {
+  font-size: 1.5rem;
+  color: #c3c8cf;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 2;
+  font-weight: bolder;
+}
+
+.schedule-item p {
+  font-size: 1rem;
+  color: #090000;
+  font-weight: bolder;
+  position: relative;
+  z-index: 2;
+}
+/* Impact Bar Chart Section */
+.impact {
+  padding: 4rem 1rem;
+  text-align: center;
+  background: #bfc9d3;
+  color: #000;
+}
+
+.chart-container {
+  margin-top: 2rem;
+  width: 60%; /* Reduce the width of the chart container */
+  max-width: 400px; /* Set a maximum width for the graph */
+  margin: 0 auto; /* Center the graph */
+}
+
+#myChart {
+  width: 100% !important; /* Make the canvas responsive */
+  height: auto !important; /* Maintain aspect ratio */
+}
+/* Contact Section */
+.contact {
+  padding: 4rem 1rem;
+  text-align: center;
+  background: url('https://img.freepik.com/free-vector/abstract-technological-background_23-2148897676.jpg') no-repeat center center/cover; /* Add your background image here */
+  color: #fff;
+  position: relative;
+}
+
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(44, 44, 44, 0.842); /* Dark overlay for better readability */
+  z-index: 1;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+  gap: 1.5rem;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  padding: 2rem;
+  border-radius: 15px;
+  backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.info-item {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.info-item i {
+  font-size: 1.5rem; /* Reduced icon size */
+  color: #ffdd57; /* Accent color */
+  margin-bottom: 0.5rem;
+}
+
+.info-item h3 {
+  font-size: 1.1rem; /* Reduced heading size */
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.info-item p {
+  font-size: 0.9rem; /* Reduced text size */
+  color: #e0e0e0;
+}
+
+.contact-form {
+  background: rgba(255, 255, 255, 0.265); /* Semi-transparent background */
+  padding: 2rem;
+  border-radius: 15px;
+  backdrop-filter: blur(10px); /* Blur effect for glassmorphism */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #e0e0e0;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact-form button {
+  background: #ffdd57;
+  color: #333;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #ffcc29;
+  transform: translateY(-2px);
+}

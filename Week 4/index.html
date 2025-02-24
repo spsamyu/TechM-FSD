@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InnovateX Tech Conference</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">InnovateX</div>
+    <nav>
+      <ul>
+        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+        <li><a href="#schedule"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+        <li><a href="#speakers"><i class="fas fa-users"></i> Speakers</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-right">
+      <button id="dark-mode-toggle" class="dark-mode-toggle">
+        <i class="fas fa-moon"></i> <!-- Moon icon for dark mode -->
+      </button>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to InnovateX 2024</h1>
+      <!-- Countdown Timer -->
+      <div id="countdown-timer">
+        <span id="days">00</span> Days
+        <span id="hours">00</span> Hours
+        <span id="minutes">00</span> Minutes
+        <span id="seconds">00</span> Seconds
+      </div>
+      <p>Join the global tech conference where innovation meets excellence.</p>
+      <a href="#register" class="cta-button"><i class="fas fa-ticket-alt"></i> Register Now</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2><i class="fas fa-info-circle"></i> About InnovateX</h2>
+    <p>InnovaeX is a global platform dedicated to fostering innovation, research, and collaboration across diverse disciplines. As an independent and inclusive conference, InnovaeX brings together leading researchers, scientists, educators, industry professionals, and thought leaders to exchange ideas, present groundbreaking research, and drive technological and academic advancements.
+
+      Our mission is to bridge the gap between theory and practice by providing a dynamic environment where experts from engineering, technology, business, healthcare, social sciences, and beyond can collaborate on solutions for real-world challenges.
+      
+      Through keynote sessions, technical presentations, panel discussions, and networking opportunities, InnovaeX empowers researchers and professionals—especially those from developing regions—with the resources and exposure they need to make a global impact.
+      
+      We are committed to fostering knowledge-sharing, interdisciplinary dialogue, and transformative innovation. Join us at InnovaeX and be part of a forward-thinking community shaping the future of research and technology.
+      For more details, visit: www.innovaex.org</p>
+  </section>
+
+  <!-- Schedule Section -->
+  <section id="schedule" class="schedule">
+    <h2><i class="fas fa-calendar-alt"></i> Schedule</h2>
+    <div class="schedule-grid">
+      <div class="schedule-item">
+        <h3>DATE</h3>
+        <p>3rd MARCH 2025</p>
+      </div>
+      <div class="schedule-item">
+        <h3>TIME</h3>
+        <p>8:00am ONWARDS</p>
+      </div>
+      <div class="schedule-item">
+        <h3>VENUE</h3>
+        <p>IIT MADRAS, CHENNAI</p>
+      </div>
+    </div>
+    <br>
+    <div class="schedule-grid">
+      <div class="schedule-item">
+        <h3>Day 1</h3>
+        <p>Keynote Speeches</p>
+      </div>
+      <div class="schedule-item">
+        <h3>Day 2</h3>
+        <p>Workshops & Panels</p>
+      </div>
+      <div class="schedule-item">
+        <h3>Day 3</h3>
+        <p>Networking & Closing</p>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Publication Process Section -->
+  <section id="publication-process" class="publication-process">
+    <h2><i class="fas fa-book"></i> Publication Process</h2>
+    <div class="process-flow">
+      <!-- Step 1: Submit Article -->
+      <div class="process-step">
+        <div class="step-icon">
+          <i class="fas fa-file-upload"></i>
+        </div>
+        <h3>SUBMIT ARTICLE</h3>
+        <p>Before deadlines</p>
+      </div>
+
+      <!-- Arrow -->
+      <div class="process-arrow">
+        <i class="fas fa-arrow-right"></i>
+      </div>
+
+      <!-- Step 2: Review Process -->
+      <div class="process-step">
+        <div class="step-icon">
+          <i class="fas fa-search"></i>
+        </div>
+        <h3>REVIEW PROCESS</h3>
+        <p>Expert Review</p>
+      </div>
+
+      <!-- Arrow -->
+      <div class="process-arrow">
+        <i class="fas fa-arrow-right"></i>
+      </div>
+
+      <!-- Step 3: Pay Fees -->
+      <div class="process-step">
+        <div class="step-icon">
+          <i class="fas fa-credit-card"></i>
+        </div>
+        <h3>PAY FEES</h3>
+        <p>Complete Payment</p>
+      </div>
+
+      <!-- Arrow -->
+      <div class="process-arrow">
+        <i class="fas fa-arrow-right"></i>
+      </div>
+      
+
+      <!-- Step 4: Publish Online -->
+      <div class="process-step">
+        <div class="step-icon">
+          <i class="fas fa-globe"></i>
+        </div>
+        <h3>ONLINE PUBLICATION</h3>
+        <p>Reputed journal</p>
+      </div>
+
+      <!-- Arrow -->
+      <div class="process-arrow">
+        <i class="fas fa-arrow-right"></i>
+      </div>
+
+      <!-- Step 5: Dispatch Copy -->
+      <div class="process-step">
+        <div class="step-icon">
+          <i class="fas fa-truck"></i>
+        </div>
+        <h3>DISPACH COPY</h3>
+        <p>Within 3 days</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Bar Chart Section -->
+  <section id="impact" class="impact">
+    <h2><i class="fas fa-chart-line"></i> InnovateX Impact</h2>
+    <div class="impact-content">
+      <p id="dynamic-content">Not less than a town! IOSR Journals has each and every facility within the journal so there is no need of visiting outside the journal, you can enjoy within the journal with lots of facilities.</p>
+      <div class="chart-container">
+        <canvas id="myChart" width="400" height="200"></canvas> <!-- Reduced canvas size -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Speakers Section -->
+  <section id="speakers" class="speakers">
+    <h2><i class="fas fa-users"></i> Speakers</h2>
+    <div class="speakers-grid" id="speakersGrid">
+      <!-- Speakers will be dynamically loaded here -->
+    </div>
+  </section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+  <div class="contact-container">
+    <!-- Contact Information -->
+    <div class="contact-info">
+      <div class="info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Address</h3>
+        <p>IIT Madras, Chennai, India</p>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-phone"></i>
+        <h3>Phone</h3>
+        <p>+91 123 456 7890</p>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <h3>Email</h3>
+        <p>info@innovatex.com</p>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-clock"></i>
+        <h3>Working Hours</h3>
+        <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form id="contactForm" class="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+    </form>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+          <li><a href="#schedule"><i class="fas fa-calendar-alt"></i> Schedule</a></li>
+          <li><a href="#speakers"><i class="fas fa-users"></i> Speakers</a></li>
+          <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <p><i class="fas fa-envelope"></i> Email: info@innovatex.com</p>
+        <p><i class="fas fa-phone"></i> Phone: +1 234 567 890</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 InnovateX. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

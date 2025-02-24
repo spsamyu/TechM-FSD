@@ -1,0 +1,26 @@
+[
+  {
+    "name": "REVATHI ADVAITHI",
+    "photo": "rev.jpeg",
+    "designation": "CEO of Flex",
+    "bio": "Advaithi is heavily focused on driving sustainable manufacturing practices at Flex. During her tenure, Flex made CDPs 'A list' for tackling water security and has pledged to cut company carbon emissions in half by 2030."
+  },
+  {
+    "name": "SATHYA NADELLA",
+    "photo": "Sathay-Nadella.webp",
+    "designation": "CEO of Miscrosoft",
+    "bio": "Nadella's tenure at Microsoft has emphasized working with companies and technologies with which Microsoft also competes, including Apple Inc., Salesforce, IBM, and Dropbox."
+  },
+  {
+    "name": "SUNDAR PICHAI",
+    "photo": "Sundar-Pichai.jpg",
+    "designation": "CEO of Google",
+    "bio": "Played a key role in the development of Google Chrome, which became the world's most popular browser and Led product and engineering for Google's products and platforms, including Search, Maps, Play, Android, Chrome, Gmail, and Google Apps."
+  },
+  {
+    "name": "SRIDHAR VEMBU",
+    "photo": "Sri.webp",
+    "designation": "Founder & former CEO of ZOHO",
+    "bio": "Sridhar Vembu is noted for taking software and product development functions from urban centres into rural villages in India. "
+  }
+]
