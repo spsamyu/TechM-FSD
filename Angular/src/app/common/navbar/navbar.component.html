@@ -1,0 +1,44 @@
+<nav class="navbar">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">🐾 Petify</a>
+    <ul class="nav-links">
+      <li>
+        <a
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a routerLink="/pets" routerLinkActive="active">Adopt Pets</a>
+      </li>
+      <li>
+        <a routerLink="/pet-toys" routerLinkActive="active"
+          >Toys & Accessories</a
+        >
+      </li>
+      <li>
+        <a routerLink="/cart" routerLinkActive="active">Cart</a>
+      </li>
+      <li>
+        <a routerLink="/adoption-requests" routerLinkActive="active"
+          >Adoption Request</a
+        >
+      </li>
+
+      <!-- Show username and Logout if user is logged in -->
+      <li *ngIf="username" class="username">
+        <span class="nav-link">Welcome, {{ username }}</span>
+      </li>
+      <li *ngIf="username">
+        <button class="logout-btn" (click)="logout()">Logout</button>
+      </li>
+
+      <!-- Show Login button if user is not logged in -->
+      <li *ngIf="!username">
+        <a routerLink="/login" routerLinkActive="active">Login</a>
+      </li>
+    </ul>
+  </div>
+</nav>

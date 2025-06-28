@@ -1,0 +1,41 @@
+<div class="filter-container">
+  <label for="bookGenre" class="filter-label">Filter by Genre:</label>
+  <select id="bookGenre" class="filter-select" [(ngModel)]="bookGenre">
+    <option value="All">All</option>
+    <option value="Fiction">Fiction</option>
+    <option value="Non-Fiction">Non-Fiction</option>
+    <option value="Mystery">Mystery</option>
+    <option value="Sci-Fi">Sci-Fi</option>
+    <option value="Biography">Biography</option>
+    <option value="Fantasy">Fantasy</option>
+  </select>
+</div>
+
+<div class="book-container">
+  <div class="book-card" *ngFor="let book of books | bookFilter : bookGenre">
+    <img [src]="book.cover" alt="{{ book.title }}" class="book-image" />
+    <div class="book-info">
+      <h3 class="book-title">{{ book.title }}</h3>
+      <p class="book-author">Author: {{ book.author }}</p>
+      <p class="book-description">{{ book.description }}</p>
+      <button class="request-button" (click)="openRequestForm(book)">
+        Request Book
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Request Form Modal -->
+<div class="modal" [class.show]="isFormOpen">
+  <div class="modal-content">
+    <span class="close" (click)="closeRequestForm()">&times;</span>
+    <app-request-form
+      *ngIf="selectedBook"
+      [book]="selectedBook"
+    ></app-request-form>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 BookHaven. All Rights Reserved.</p>
+</footer>
