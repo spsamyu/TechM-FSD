@@ -9,4 +9,6 @@ Weekly work submissions will be stored here.
 
 ## Contribution  
 - Ensure all submissions are complete and accurate.  
-- Commit changes with appropriate messages.  
+- Commit changes with appropriate messages.
+
+  
